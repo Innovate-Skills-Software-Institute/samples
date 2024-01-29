@@ -1,0 +1,20 @@
+[CORE]
+core_version="3.0"
+
+[DATA_NODE.input_name]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[DATA_NODE.message]
+storage_type = "pickle"
+scope = "SCENARIO:SCOPE"
+
+[TASK.build_msg]
+inputs = [ "input_name:SECTION" ]
+outputs = [ "message:SECTION" ]
+function = "main.build_message:function"
+skippable = "False:bool"
+
+[SCENARIO.my_scenario]
+additional_data_nodes = [ ]
+tasks = [ "build_msg:SECTION" ]

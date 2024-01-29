@@ -1,0 +1,38 @@
+{
+    "input_name" : "John Doe",
+    "submit" : "Execute",
+    "message" : "Hello World !",
+    "gdp_by_country" : [
+        {
+        "id" : 0,
+        "Country" : "United States",
+        "GDP" : "24,462,700,000,000",
+        "Share" : "25.32%"
+        },
+        {
+        "id" : 1,
+        "Country" : "China",
+        "GDP" : "17,963,200,000,000",
+        "Share" : "17.86%"
+        },
+        {
+        "id" : 2,
+        "Country" : "Japan",
+        "GDP" : "4,231,140,000,000",
+        "Share" : "4.21%"
+        },
+        {
+        "id" : 3,
+        "Country" : "Germany",
+        "GDP" : "4,072,190,000,000",
+        "Share" : "4.05%"
+        },
+        {
+        "id" : 4,
+        "Country" : "India",
+        "GDP" : "3,385,090,000,000",
+        "Share" : "3.37%"
+        }
+    ],
+    "data" : "gdp.csv"
+}
