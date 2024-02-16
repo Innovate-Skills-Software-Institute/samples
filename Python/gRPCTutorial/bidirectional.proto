@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package bidirectional;
+
+service Bidirectional{
+    rpc getServerMessage(stream RequestPayload) returns (stream ResponsePayload);
+    rpc clientStreamingMessage(stream RequestPayload) returns (ResponsePayload);
+    rpc serverStreamingMessage(RequestPayload) returns (stream ResponsePayload);
+}
+
+message RequestPayload{
+  string message = 1;
+}
+
+message ResponsePayload{
+  string message = 1;
+}
